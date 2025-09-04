@@ -6,7 +6,7 @@ print (f'Guess the number in the range from {lower_num} to {higher_num}.')
 
 while True:
     try:
-        user_guess: int = ing(input('Guees: '))
+        user_guess: int = int(input('Guees: '))
     except ValueError as e:
         print('Please enter a valid number.')
         continue

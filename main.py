@@ -2,7 +2,7 @@ from random import randint
 
 lower_num, higher_num = 1, 10
 random_number: int = randint(lower_num, higher_num)
-number_of_attempts = 0
+number_of_attempts = 1
 print (f'Guess the number in the range from {lower_num} to {higher_num}.')
 
 while True:
@@ -13,7 +13,7 @@ while True:
         continue
 
     if user_guess > random_number and number_of_attempts <=3:
-        print('The number if lower')
+        print('The number is lower')
         number_of_attempts +=1
     elif user_guess < random_number and number_of_attempts <=3:
         print ('The number is higher')

@@ -13,14 +13,14 @@ while True:
         continue
 
     if user_guess > random_number and number_of_attempts < 3:
-        print(f'The number is lower')
+        print('The number is lower')
         number_of_attempts +=1
     elif user_guess < random_number and number_of_attempts < 3:
-        print (f'The number is higher ')
+        print ('The number is higher')
         number_of_attempts +=1
     elif user_guess != random_number and number_of_attempts == 3:
-        print(f"You had you're 3 tries, game over!")
+        print("You had you're 3 tries, game over!")
         break
     else:
-        print(f'You guessed it!')
+        print('You guessed it!')
         break
